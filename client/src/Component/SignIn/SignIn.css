@@ -1,5 +1,3 @@
-
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800'); */
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 
@@ -51,11 +49,9 @@ a {
 
 
 
-    background: #0052D4;  /* fallback for old browsers */
-/* background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  Chrome 10-25, Safari 5.1-6 */
-/* background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0052D4;  
 
-border: none;
+	border: none;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -82,8 +78,6 @@ border: none;
     background: #ffffff ; 
    
     border: none;
-
-
 
 }
 
@@ -187,9 +181,11 @@ input {
 	background: linear-gradient(to right, #FF4B2B, #FF416C);
      */
 
-    background: #0052D4;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0052D4;  
+	
+
+	/* background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  
+	background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);  */
 
     
     background-repeat: no-repeat;
@@ -246,43 +242,3 @@ background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
 }
-
-/* .social-container {
-	margin: 20px 0;
-}
-
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-} */
-/* 
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
-} */
