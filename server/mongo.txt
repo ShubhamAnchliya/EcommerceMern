@@ -1,0 +1,38 @@
+mern_ecommerce
+
+
+
+shubham
+123456S
+
+
+export const MONGO_URI = "mongodb+srv://shubham:123456S@cluster0.fnqym.mongodb.net/mern_ecommerce?retryWrites=true&w=majority"
+export const JWT_SECRET ="snowden"
+
+
+
+
+
+
+MONGODB_URI = mongodb+srv://shubham:123456S@cluster0.fnqym.mongodb.net/mernecommerce?retryWrites=true&w=majority
+JWT_SECRET = snowden
+
+
+
+
+
+
+{
+    "email": "shubhamanchliya4@gmail.com",
+    "password": "123456789"
+}
+
+
+
+
+{
+
+    "email": "amanprasad@gmail.com",
+    "password": "123456789"
+    
+}
