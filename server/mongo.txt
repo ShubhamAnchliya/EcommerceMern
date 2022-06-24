@@ -36,3 +36,13 @@ JWT_SECRET = snowden
     "password": "123456789"
     
 }
+
+
+
+
+{
+    "name": "Kenil",
+    "email": "kenilbabuni@gmail.com",
+    "password": "123456"
+    
+}
