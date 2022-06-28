@@ -250,7 +250,7 @@ const signupData = (data) => {
 
                         <input 
                             type="password" 
-                            {...register("password", {required:true ,minLength:3, })}
+                            {...register("password", {required:true ,minLength:6, })}
                             name='password'
                             placeholder="Password" 
                             // value={formData.password}
@@ -258,7 +258,7 @@ const signupData = (data) => {
                             // required
                         />
                           {errors.password?.type=== "required" && <p>Password is required</p> }
-                          {errors.password?.type=== "minLength" && <p>Password sholud have minimun 3 characters</p> }
+                          {errors.password?.type=== "minLength" && <p>Password sholud have minimun 6 characters</p> }
                           
 {/* 
                           validate: (val: string) => {
@@ -276,7 +276,7 @@ const signupData = (data) => {
                                     required:true ,
                                     validate: (value) => {
                                         const { password } = getValues();
-                                        return password === value || "werre";
+                                        return password === value || "Passwords should match!";
                                     }
 
                                 }
@@ -288,9 +288,9 @@ const signupData = (data) => {
                             // required
                         />
                           {errors.confirmPassword?.type=== "required" && <p>Confirm Password is required</p> }
-                          {errors.confirmPassword?.type=== "ers" && <p>Passwords should match!</p> }
+                          {/* {errors.confirmPassword?.type=== "ers" && <p>Passwords should match!</p> } */}
 
-
+                          {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
 
                         <button className='buttons' type='submit'>Sign Up</button>
 

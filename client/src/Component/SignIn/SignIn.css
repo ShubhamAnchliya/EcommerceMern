@@ -23,7 +23,7 @@ h2 {
 	text-align: center;
 }
 
-p {
+.overlay p {
 	font-size: 14px;
 	font-weight: 100;
 	line-height: 20px;
@@ -93,16 +93,26 @@ a {
 }
 
 
-.formLSpan{
-    font-size: 18px;
+.formL p {
+	margin-top: 0px;
+    margin-bottom: 15px;
+	color: red;
 }
 
-input {
+.formL span{
+    font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.formL input {
 	background-color: #eee;
 	border: none;
 	padding: 12px 15px;
-	margin: 8px 0;
+	margin: 8px;
 	width: 100%;
+	height: 7%;
+
 }
 
 .container {

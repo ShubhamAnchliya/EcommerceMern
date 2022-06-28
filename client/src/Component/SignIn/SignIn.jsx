@@ -109,39 +109,50 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import "./SignIn.css";
 
+import { useForm } from 'react-hook-form';
+
 const SignIn = () => {
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  const [formData, setFormData] = useState({
-    email:"",
-    password:""
-  })
+  // const [formData, setFormData] = useState({
+  //   email:"",
+  //   password:""
+  // })
 
-
-  const InputEvent = (event) => {
-
-    const { name, value } = event.target;
-
-    setFormData((preVal) => {
-
-      return {
-        ...preVal,
-        [name]: value,
-      };
-
-    });
-
-  };
+  const  { register, handleSubmit, getValues, watch, formState:{errors} } = useForm();
 
 
-  const formSubmit = (e) => {
+  const signinData = (data) => {
 
-    e.preventDefault();
-    console.log(formData);
-    
+    console.log(data);
 
   }
+   
+  
+  // const InputEvent = (event) => {
+
+  //   const { name, value } = event.target;
+
+  //   setFormData((preVal) => {
+
+  //     return {
+  //       ...preVal,
+  //       [name]: value,
+  //     };
+
+  //   });
+
+  // };
+
+
+  // const formSubmit = (e) => {
+
+  //   e.preventDefault();
+  //   console.log(formData);
+    
+
+  // }
 
 
 
@@ -153,27 +164,35 @@ const SignIn = () => {
 
   <div className="container" id="container">
     <div className="form-container sign-in-container">
-      <form className='formL'  onSubmit={formSubmit} >
+      <form className='formL'  onSubmit={handleSubmit(signinData)} >
         <h1>Sign in</h1>
         
-        <span className='formLSpan'>or use your account</span>
+        <span>or use your account</span>
         <input 
           type="email" 
+          {...register("email",{required:true,pattern: {value: /\S+@\S+\.\S+/}  })}
           name='email'
           placeholder="Email" 
-          value={formData.email}
-          onChange={InputEvent}
-          required
+          // value={formData.email}
+          // onChange={InputEvent}
+          // required
 
         />
+
+        {errors.email?.type=== "required" && <p>Email is required</p> }
+        {errors.email?.type=== "pattern" && <p>Invalid email format</p> }
+
         <input 
           type="password" 
+          {...register("password", {required:true ,minLength:6, })}
           name='password'
           placeholder="Password" 
-          value={formData.password}
-          onChange={InputEvent}
-          required
-        />
+          // value={formData.password}
+          // onChange={InputEvent}
+          // required
+        /> 
+        {errors.password?.type === "required" && <p>Password is required</p> }
+        {errors.password?.type === "minLength" && <p>Password sholud have minimun 6 characters</p>}
 
 
         <button className='buttonL' type='submit'>Sign In</button>
