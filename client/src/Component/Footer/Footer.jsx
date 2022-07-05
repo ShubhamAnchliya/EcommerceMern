@@ -5,95 +5,115 @@ const Footer = () => {
   return (
     <>
 
+<footer className="new_footer_area bg_color " id='pageend'>
 
-
-        <footer className="new_footer_area bg_color">
             <div className="new_footer_top">
+
                 <div className="container">
+
                     <div className="row">
+
                         <div className="col-lg-3 col-md-6">
-                            <div className="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style={{visibility:' visible',  animationDelay: '0.2s', animationName: 'fadeInLeft'}}>
+                            <div className="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style={{visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeInLeft'}}>
                                 <h3 className="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                <p>Don't miss any updates of our new templates and extensions.!</p>
+                                <p>Don’t miss any updates of our new products and discount offer.!</p>
                                 <form action="#" className="f_subscribe_two mailchimp" method="post" noValidate={true} _lpchecked="1">
                                     <input type="text" name="EMAIL" className="form-control memail" placeholder="Email" />
                                     <button className="btn btn_get btn_get_two" type="submit">Subscribe</button>
                                     <p className="mchimp-errmessage" style={{display: 'none'}}></p>
-                                    <p className="mchimp-sucmessage"  style={{display: 'none'}}></p>
+                                    <p className="mchimp-sucmessage" style={{display: 'none'}}></p>
                                 </form>
                             </div>
                         </div>
+
                         <div className="col-lg-3 col-md-6">
-                            <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style={{visibility:' visible',  animationDelay: '0.4s', animationName: 'fadeInLeft'}} >
-                                <h3 className="f-title f_600 t_color f_size_18">Download</h3>
-                                <ul className="list-unstyled f_list">
-                                    <li><a href="g#">Company</a></li>
-                                    <li><a href="#r">Android App</a></li>
-                                    <li><a href="#r">ios App</a></li>
-                                    <li><a href="#r">Desktop</a></li>
-                                    <li><a href="#r">Projects</a></li>
-                                    {/* <li><a href="#r">My tasks</a></li> */}
+                            <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style={{visibility: 'visible', animationDelay: '0.4s', animationName: 'fadeInLeft'}}>
+                                <h3 className="f-title f_600 t_color f_size_18">Useful Links</h3>
+                                <ul className="list-unstyledf_list">
+                                    <li><a href="g">Home</a></li>
+                                    <li><a href="#d">About</a></li>
+                                    <li><a href="#dg">Profile</a></li>
+                                    <li><a href="#g">Contact</a></li>
+                                    {/* <li><a href="#g">Projects</a></li>
+                                    <li><a href="#g">My tasks</a></li> */}
                                 </ul>
                             </div>
                         </div>
-                        {/* <div className="col-lg-3 col-md-6">
-                            <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style={{visibility:' visible',  animationDelay: '0.6s', animationName: 'fadeInLeft'}}>
+
+                        <div className="col-lg-3 col-md-6">
+                            <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style={{visibility: 'visible', animationDelay: '0.6s', animationName: 'fadeInLeft'}}>
                                 <h3 className="f-title f_600 t_color f_size_18">Help</h3>
-                                <ul className="list-unstyled f_list">
-                                    <li><a href="#r">FAQ</a></li>
-                                    <li><a href="r#">Term &amp; conditions</a></li>
-                                    <li><a href="r#">Reporting</a></li>
-                                    <li><a href="rr#">Documentation</a></li>
-                                    <li><a href="#r">Support Policy</a></li>
-                                    <li><a href="r#">Privacy</a></li>
+                                <ul className="list-unstyledf_list">
+                                    <li><a href="#y">FAQ</a></li>
+                                    <li><a href="#tr">Term &amp; conditions</a></li>
+                                    <li><a href="#rt">Reporting</a></li>
+                                    <li><a href="#r">Documentation</a></li>
+                                    <li><a href="#rt">Support Policy</a></li>
+                                    <li><a href="y#">Privacy</a></li>
                                 </ul>
+                            </div>
+                        </div>
+{/* 
+                        <div className="col-lg-3 col-md-6">
+                            <div className="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style={{visibility: 'visible', animationDelay: '0.8s', animationName: 'fadeInLeft'}}>
+                                <h3 className="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                <div className="f_social_icon">
+                                    <a href="t#" className="fab fa-facebook"></a>
+                                    <a href="#t" className="fab fa-twitter"></a>
+                                    <a href="#t" className="fab fa-linkedin"></a>
+                                    <a href="#t" className="fab fa-pinterest"></a>
+                                </div>
                             </div>
                         </div> */}
 
                         <div className="col-lg-3 col-md-6">
-                            <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style={{visibility:' visible',  animationDelay: '0.6s', animationName: 'fadeInLeft'}}>
+                            <div className="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style={{visibility: 'visible', animationDelay: '0.8s', animationName: 'fadeInLeft'}}>
                                 <h3 className="f-title f_600 t_color f_size_18">Address</h3>
-                                <ul className="list-unstyled f_list">
-                                    <li><a href="#r">12, Vijay  Nagar</a></li>
-                                    <li><a href="r#">Term &amp; conditions</a></li>
-                                    <li><a href="r#">Reporting</a></li>
-                                    <li><a href="rr#">Documentation</a></li>
-                                    <li><a href="#r">Support Policy</a></li>
-                                    <li><a href="r#">Privacy</a></li>
-                                </ul>
+                                {/* <ul className="list-unstyledf_list"> */}
+                                <i>12, Vijay Nagar</i><br />           
+                                <i>Scheme No. 54</i><br />
+                                <i>Indore</i><br />
+                                <i>M.P.</i><br />
+                                <i>India</i><br />
+                                <i>+916592665901</i><br />
+                                   
+                                 
+                          
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6">
-                            <div className="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style={{visibility:' visible',  animationDelay: '0.8s', animationName: 'fadeInLeft'}}>
-                                <h3 className="f-title f_600 t_color f_size_18">Follow Us</h3>
-                                <div className="f_social_icon">
-                                    {/* <a href="r#" className="fab fa-facebook"></a>
-                                    <a href="r#" className="fab fa-twitter"></a>
-                                    <a href="#r" className="fab fa-linkedin"></a>
-                                    <a href="r#" className="fab fa-pinterest"></a> */}
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
+
                 </div>
+
                 <div className="footer_bg">
                     <div className="footer_bg_one"></div>
                     <div className="footer_bg_two"></div>
                 </div>
+
             </div>
+
             <div className="footer_bottom">
+
                 <div className="container">
+
                     <div className="row align-items-center">
+                    
                         <div className="col-lg-6 col-sm-7">
-                            <p className="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                            <p className="mb-0 f_400">Copyright © 2022 PARSHWA STORE All rights reserved.</p>
                         </div>
-                        <div className="col-lg-6 col-sm-5 text-right">
+                        {/* <div className="col-lg-6 col-sm-5 text-right">
                             <p>Made with <i className="icon_heart"></i> in <a href="http://cakecounter.com" target="_blank" rel="noreferrer">CakeCounter</a></p>
-                        </div>
+                        </div> */}
                     </div>
+
                 </div>
+
             </div>
+
         </footer>
+
+     
       
     </>
   )

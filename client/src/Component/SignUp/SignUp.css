@@ -13,14 +13,18 @@
 	/* margin: -20px 0 50px; */
 }
 
-h1 {
+.headingO {
 	font-weight: bold;
 	margin: 0;
 }
 
-h2 {
+
+.headingT {
 	text-align: center;
 }
+
+
+
 
 /* .overlays p {
 	font-size: 14px;

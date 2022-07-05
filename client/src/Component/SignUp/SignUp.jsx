@@ -214,7 +214,7 @@ const signupData = (data) => {
 
                     <form className='formS' onSubmit={handleSubmit(signupData)}>
 
-                        <h1>Create Account</h1>
+                        <h1 className='headingO'>Create Account</h1>
                         
                         <span className='formsSpan' >or use your email for registration</span>
 
