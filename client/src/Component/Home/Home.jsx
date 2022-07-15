@@ -11,10 +11,10 @@ const product = {
   name :"Blue TShirt",
   images: [{ url: "https://rukminim1.flixcart.com/image/800/960/kzd147k0/t-shirt/q/z/m/m-tsrt-303-reya-original-imagbefyffzh68wj.jpeg?q=50" }],
   price: "₹450",
-  _id : "shubham"
+  _id : "shubham",
 
 
-}
+};
 
 
 const Home = () => {
@@ -67,12 +67,18 @@ const Home = () => {
       </section> */}
 
 
-      <h2 className='featureProduct'>Feature Product</h2>
+      <h2 className='featureProduct' id='pageend'>Feature Product</h2>
 
 
-      <div className='productContainer' id='productContainer'>
+      <div className='productContainer' id='productContainer'  >
 
-      <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
+        <Product product={product} />
 
       </div>
 

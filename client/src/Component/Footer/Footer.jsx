@@ -5,7 +5,9 @@ const Footer = () => {
   return (
     <>
 
-<footer className="new_footer_area bg_color " id='pageend'>
+{/* <footer className="new_footer_area bg_color " id='pageend'> */}
+
+<footer className="new_footer_area bg_color " >
 
             <div className="new_footer_top">
 

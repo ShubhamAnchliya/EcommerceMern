@@ -167,7 +167,7 @@ const SignIn = () => {
       <form className='formL'  onSubmit={handleSubmit(signinData)} >
         <h1>Sign in</h1>
         
-        <span>or use your account</span>
+        <span className='spanL'>or use your account</span>
         <input 
           type="email" 
           {...register("email",{required:true,pattern: {value: /\S+@\S+\.\S+/}  })}

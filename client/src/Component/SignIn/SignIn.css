@@ -31,16 +31,16 @@ h2 {
 	margin: 20px 0 30px;
 }
 
-span {
+.spanL {
 	font-size: 12px;
 }
 
-a {
+/* a {
 	color: #333;
 	font-size: 14px;
 	text-decoration: none;
 	margin: 15px 0;
-}
+} */
 
 .buttonL {
 	border-radius: 20px;
@@ -99,7 +99,7 @@ a {
 	color: red;
 }
 
-.formL span{
+.formL .spanL{
     font-size: 18px;
 	margin-top: 10px;
 	margin-bottom: 20px;

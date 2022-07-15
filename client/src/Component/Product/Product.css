@@ -1,0 +1,91 @@
+.productCard {
+    /* width: 200px; */
+    width: 15vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:black;
+    margin: 3vmax;
+    /* margin-left: 3.7vmax; */
+
+    
+    padding-bottom: 2vmax;
+    transition: all 0.5s;
+
+}
+
+
+.productCard > p {
+    margin: 5px;
+}
+
+.productCard > img {
+    /* width: 200px; */
+    width: 15vmax;
+}
+
+
+.productCard > div {
+    display: flex;
+    justify-content: flex-start;
+    /* margin: 2vmax; */
+    /* margin: 0.5vmax ; */
+    /* width: ; */
+    margin: 5px;
+
+}
+
+
+.productCard > div > span {
+    /* width: min-content; */
+    font-size: 12px;
+    margin: 0.2vmax;
+    margin-top: 10px;
+
+}
+
+
+.productCard > span {
+    margin: 0.5vmax ;
+    font-size: 15px;
+    color: red;
+}
+
+
+.productCard:hover {
+
+    box-shadow: 0 0 5px black;
+    /* transform: translateY(2em); */
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+
+
+
+@media screen and (min-width: 578px) {
+    
+    .productCard > p {
+        font-size: 1.5vmax;
+    }
+
+    .productCard > div {
+        display: block;
+        /* justify-content: flex-start; */
+        /* display: inline; */
+        width: 20vmax;
+        margin:  .5vmax;
+
+    }
+
+    .productCard > span {
+        font-size: 1.5vmax;
+    }
+
+    .productCard > div > span {
+        font-size: 1.2vmax;
+    }
+
+
+
+}
