@@ -95,10 +95,12 @@
   transition: color 0.3s ease-in-out;
 }
 
-.logo {
+.logo  {
   order: 1;
   font-size: 2.3rem;
   margin-bottom: 0.5rem;
+  
+  
 }
 
 /* ............//// Showcase styling ////......... */

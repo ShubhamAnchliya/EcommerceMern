@@ -105,15 +105,16 @@
 
 // 27 useHookForm
 
-import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "./SignIn.css";
 
 import { useForm } from 'react-hook-form';
+import MetaData from '../MetaData';
 
 const SignIn = () => {
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // const [formData, setFormData] = useState({
   //   email:"",
@@ -160,61 +161,63 @@ const SignIn = () => {
 
     <>
 
-<div className='logInPage'>
+        <MetaData title="SignIn Page"/>
 
-  <div className="containerSI" id="containerSI">
-    <div className="form-container sign-in-container">
-      <form className='formL'  onSubmit={handleSubmit(signinData)} >
-        <h1>Sign in</h1>
-        
-        <span className='spanL'>or use your account</span>
-        <input 
-          type="email" 
-          {...register("email",{required:true,pattern: {value: /\S+@\S+\.\S+/}  })}
-          name='email'
-          placeholder="Email" 
-          // value={formData.email}
-          // onChange={InputEvent}
-          // required
+        <div className='logInPage'>
 
-        />
+          <div className="containerSI" id="containerSI">
+            <div className="form-container sign-in-container">
+              <form className='formL'  onSubmit={handleSubmit(signinData)} >
+                <h1>Sign in</h1>
+                
+                <span className='spanL'>or use your account</span>
+                <input 
+                  type="email" 
+                  {...register("email",{required:true,pattern: {value: /\S+@\S+\.\S+/}  })}
+                  name='email'
+                  placeholder="Email" 
+                  // value={formData.email}
+                  // onChange={InputEvent}
+                  // required
 
-        {errors.email?.type=== "required" && <p>Email is required</p> }
-        {errors.email?.type=== "pattern" && <p>Invalid email format</p> }
+                />
 
-        <input 
-          type="password" 
-          {...register("password", {required:true ,minLength:6, })}
-          name='password'
-          placeholder="Password" 
-          // value={formData.password}
-          // onChange={InputEvent}
-          // required
-        /> 
-        {errors.password?.type === "required" && <p>Password is required</p> }
-        {errors.password?.type === "minLength" && <p>Password sholud have minimun 6 characters</p>}
+                {errors.email?.type=== "required" && <p>Email is required</p> }
+                {errors.email?.type=== "pattern" && <p>Invalid email format</p> }
+
+                <input 
+                  type="password" 
+                  {...register("password", {required:true ,minLength:6, })}
+                  name='password'
+                  placeholder="Password" 
+                  // value={formData.password}
+                  // onChange={InputEvent}
+                  // required
+                /> 
+                {errors.password?.type === "required" && <p>Password is required</p> }
+                {errors.password?.type === "minLength" && <p>Password sholud have minimun 6 characters</p>}
 
 
-        <button className='buttonL' type='submit'>Sign In</button>
+                <button className='buttonL' type='submit'>Sign In</button>
 
-      </form>
-    </div>
+              </form>
+            </div>
 
-    <div className="overlay-container">
-      <div className="overlay">
-        <div className="overlay-panel overlay-right">
-          <h1>Hello, Friend!</h1>
-          <p>Enter your personal details and start journey with us</p>
-          <Link to={'/signup'} ><button className="buttonL ghost" id="signUp">Sign Up</button></Link>
-        </div>
-      </div>
-    </div>
-    
-  </div>
+            <div className="overlay-container">
+              <div className="overlay">
+                <div className="overlay-panel overlay-right">
+                  <h1>Hello, Friend!</h1>
+                  <p>Enter your personal details and start journey with us</p>
+                  <Link to={'/signup'} ><button className="buttonL ghost" id="signUp">Sign Up</button></Link>
+                </div>
+              </div>
+            </div>
+            
+          </div>
 
-   
           
-</div>
+                  
+        </div>
 
     </>
   )

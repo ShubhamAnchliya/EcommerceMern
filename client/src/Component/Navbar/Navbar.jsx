@@ -33,7 +33,13 @@ const Navbar = () => {
 
                 </ul>
 
-                <h1 className="logo">PARSHWA STORE</h1>
+
+
+                <h1 className="logo">
+               
+                    PARSHWA STORE
+              
+              </h1>
 
             </div>
 

@@ -9,19 +9,21 @@
     /* margin-left: 3.7vmax; */
 
     
-    padding-bottom: 2vmax;
+    padding-bottom: 0.5vmax;
     transition: all 0.5s;
 
 }
 
 
 .productCard > p {
-    margin: 5px;
+    margin:  2px 5px ;
+    /* margin-bottom: 2px; */
 }
 
 .productCard > img {
     /* width: 200px; */
     width: 15vmax;
+    height: 15vmax;
 }
 
 
@@ -32,6 +34,7 @@
     /* margin: 0.5vmax ; */
     /* width: ; */
     margin: 5px;
+    width: 8vmax;
 
 }
 
@@ -73,8 +76,10 @@
         display: block;
         /* justify-content: flex-start; */
         /* display: inline; */
-        width: 20vmax;
+        /* width: 20vmax; */
+        width: 8vmax;
         margin:  .5vmax;
+     
 
     }
 

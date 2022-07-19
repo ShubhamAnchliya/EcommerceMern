@@ -11,6 +11,8 @@ import Home from './Component/Home/Home';
 import Profile from './Component/Profile/Profile';
 import SignIn from './Component/SignIn/SignIn';
 import SignUp from './Component/SignUp/SignUp';
+import ProductDetails from './Component/ProductDetails/ProductDetails';
+// import Loader from './Component/Loader/Loader';
 
 
 const App = () => {
@@ -31,6 +33,10 @@ const App = () => {
         <Route path="/contact" element={<Contact />}  />
 
         <Route path="/profile" element={<Profile />}  />
+
+        <Route path="/product/:id" element={<ProductDetails />}  />
+
+        {/* <Route path="/loader" element={<Loader />}   /> */}
 
         <Route path='*' element={<ErrorPage/>} />
 

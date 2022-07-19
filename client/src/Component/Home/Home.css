@@ -143,8 +143,9 @@ border: 1px solid rgba(255, 247, 255, 0.2);
     display: flex;
     /* width: 50%; */
     flex-wrap: wrap;
-    margin: 6vmax ;
-    justify-content: center;
+    /* margin: 6vmax ; */
+    /* justify-content: center; */
+    margin-left: 7rem;
 
   }
 

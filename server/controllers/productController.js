@@ -31,11 +31,13 @@ const { rawListeners } = require("../models/ProductModel");
 // get api getAllProducts
 exports.getAllProducts =  catchAsyncError(
     
-    async (req, res) =>{
+    async (req, res, next) =>{
 
-        const resultPerPage = 5;
+        // return next(new ErrorHandler("this is new error", 500)) ;
 
-        const productCount = await Product.countDocuments();
+        const resultPerPage = 8;
+
+        const productsCount = await Product.countDocuments();
 
         const apiFeatures = new ApiFeatures(Product.find(), req.query)
         .search()
@@ -48,7 +50,8 @@ exports.getAllProducts =  catchAsyncError(
 
         res.status(200).json({
             success: true,
-            products
+            products,
+            productsCount
             // message:"product route working fine"
         })
     }
